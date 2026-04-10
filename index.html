@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taekeon (주)태건 | 차량 특장 . 차량광고</title>
+    <meta name="description" content="국내 최고의 차량 특장, 차량 광고 및 물류 통합 솔루션을 제공합니다.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/logo.png" alt="태건 로고" class="logo-img">
+                <span class="logo-text">TAEKEON</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+                <li><a href="#clients" class="nav-link" data-section="clients">Clients</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas class="hero-particles" id="heroParticles"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-up">Vehicle Solution Partner</div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                <span class="hero-title-line">국내 최고의</span>
+                <span class="hero-title-line accent">차량 특장 솔루션</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                차량 광고 및 물류 통합 솔루션을 제공합니다
+            </p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                <a href="#services" class="btn btn-primary">
+                    <span>서비스 보기</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">문의하기</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left" data-animate="fade-right">
+                    <div class="section-label">About Us</div>
+                    <h2 class="section-title">
+                        지난 시간은<br>
+                        <span class="accent">믿음과 신뢰</span>의<br>
+                        역사입니다
+                    </h2>
+                    <p class="about-desc">
+                        주식회사 태건은 모빌리티 및 다양한 산업을 전문적이고 혁신적인 방법으로
+                        사업의 방향을 체계적으로 디자인하여 토탈 서비스를 지향하며
+                        고객 만족에 최선을 다하겠습니다.
+                    </p>
+                    <a href="#services" class="btn btn-primary">
+                        <span>자세히 보기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="about-right" data-animate="fade-left">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-suffix">+</div>
+                            <div class="stat-label">Partners</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-suffix">%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">Our Services</div>
+                <h2 class="section-title">최고의 품질과 서비스를<br><span class="accent">제공하겠습니다</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-thumb">
+                        <img src="assets/carnival.png" alt="특장 차량">
+                    </div>
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">특장 차량</h3>
+                    <p class="service-desc">15년 이상 다양한 차량의 실내/외부 특장 납품 경험으로 고객 요구에 맞춘 최고의 품질과 서비스를 제공합니다.</p>
+                    <a href="#" class="service-link" data-modal="modal-special">
+                        <span>더 알아보기</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-thumb">
+                        <img src="assets/ambulance-interior.png" alt="특수 구급차">
+                    </div>
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">특수 구급차</h3>
+                    <p class="service-desc">충분한 내부 공간을 바탕으로 다양한 응급의료 장비를 완벽하게 갖추고 응급 환자에게 적절한 응급처치를 수행합니다.</p>
+                    <a href="#" class="service-link" data-modal="modal-ambulance">
+                        <span>더 알아보기</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-thumb">
+                        <img src="assets/ad-print.jpg" alt="차량 광고">
+                    </div>
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">차량 광고</h3>
+                    <p class="service-desc">차량 광고 제작 및 첨단 장비를 바탕으로 친환경 인쇄, 자체 공장 운영으로 최상의 컬러 및 이미지를 구현합니다.</p>
+                    <a href="#" class="service-link" data-modal="modal-ad">
+                        <span>더 알아보기</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-thumb">
+                        <img src="assets/logistics.jpg" alt="차량 물류">
+                    </div>
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">블랙박스</h3>
+                    <p class="service-desc">경찰청, 소방청 등 관공서 차량에 최적화된 전문 블랙박스 시스템을 개발 및 납품합니다.</p>
+                    <a href="#" class="service-link" data-modal="modal-blackbox">
+                        <span>더 알아보기</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Marquee Section -->
+    <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-title">특장차 <span class="accent">시공 사례</span></h2>
+            </div>
+        </div>
+        <div class="marquee-wrapper" data-animate="fade-up" data-delay="200">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/police.png" alt="경찰 특장차">
+                            </div>
+                            <span>경찰 특장차</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/ambulance-interior.png" alt="구급차 내부">
+                            </div>
+                            <span>구급차 내부</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/ad-print.jpg" alt="차량 광고 랩핑">
+                            </div>
+                            <span>광고 랩핑</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/logistics.jpg" alt="물류 차량">
+                            </div>
+                            <span>물류 차량</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/vehicle-wrap.jpg" alt="차량 랩핑 시공">
+                            </div>
+                            <span>차량 랩핑</span>
+                        </div>
+                    </div>
+                    <div class="marquee-item">
+                        <div class="marquee-card">
+                            <div class="marquee-card-img">
+                                <img src="assets/carnival.png" alt="카니발 특장">
+                            </div>
+                            <span>카니발 특장</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients" id="clients">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">Our Clients</div>
+                <h2 class="section-title">주요 <span class="accent">고객사 및 파트너사</span></h2>
+                <p class="section-desc">
+                    고객만족을 최우선으로 생각하며 끊임없는 기술개발과 품질관리에 힘쓰고 있는
+                    주식회사 태건은 믿을 수 있는 기업, 고객에게 사랑받는 기업이라는 가치의 실현을 위해 노력하고 있습니다.
+                </p>
+            </div>
+            <div class="clients-hub" data-animate="fade-up" data-delay="100">
+                <img src="assets/clients-hub.png" alt="주요 고객사 및 파트너사" class="clients-hub-img">
+            </div>
+            <div class="service-tabs" data-animate="fade-up" data-delay="200">
+                <a href="#services" class="service-tab active">특장 차량</a>
+                <a href="#services" class="service-tab">특수 구급차</a>
+                <a href="#services" class="service-tab">차량 광고</a>
+                <a href="#services" class="service-tab">블랙박스</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta" id="cta">
+        <div class="cta-bg">
+            <div class="cta-grid-lines"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 class="cta-title">귀사의 차량에<br><span class="accent">날개를 달아보십시오</span></h2>
+                <p class="cta-desc">고객들은 귀사를 기억하고, 귀사는 (주)태건을 기억하게 될 것입니다.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    <span>프로젝트 문의하기</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="section-label">Contact Us</div>
+                    <h2 class="section-title">궁금하신 사항이<br><span class="accent">있으신가요?</span></h2>
+                    <p class="contact-desc">(주)태건과 함께 최고의 차량 솔루션을 경험하세요.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <div class="detail-label">서울 사무소</div>
+                                <div class="detail-value">02-2671-8420</div>
+                                <div class="detail-sub">Fax: 02-2633-6415</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <div class="detail-label">본사 (이천)</div>
+                                <div class="detail-value">070-8892-0790~9</div>
+                                <div class="detail-sub">Fax: 031-632-5249</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <div class="detail-label">Email</div>
+                                <div class="detail-value">info@taekeon.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <div class="detail-label">서울 사무소</div>
+                                <div class="detail-value">서울시 영등포구 양평로21길 26<br>아이에스BIZ타워 1208호</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <div class="detail-label">본사 / 공장</div>
+                                <div class="detail-value">경기도 이천시 대장로 67</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <div class="map-tabs">
+                            <button class="map-tab active" data-map="seoul">서울 사무소</button>
+                            <button class="map-tab" data-map="icheon">본사 (이천)</button>
+                        </div>
+                        <div class="map-container">
+                            <iframe id="map-seoul" class="map-frame active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5!2d126.893!3d37.5337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f1b0b0b0b0b%3A0x0!2z7ISc7Jq47IucIOyYgeuTse2PrOq1rCDslpHtj4nroZwyMeq4uCAyNg!5e0!3m2!1sko!2skr!4v1" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe id="map-icheon" class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.5!2d127.434!3d37.272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb0b0b0b0b0b0%3A0x0!2z6rK96riw64-EIOydtOyynOyLnCDrjIDsnqXroZwgNjc!5e0!3m2!1sko!2skr!4v1" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="이름" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="이메일" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" placeholder="회사명">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="문의 내용을 입력해주세요" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>문의 보내기</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <img src="assets/logo.png" alt="태건 로고" class="logo-img">
+                        <span class="logo-text">TAEKEON</span>
+                    </a>
+                    <p class="footer-desc">국내 최고의 차량 특장, 차량 광고 및 물류 통합 솔루션</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 주식회사 태건. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modals -->
+    <div class="modal-overlay" id="modal-special">
+        <div class="modal">
+            <button class="modal-close" aria-label="닫기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-hero">
+                <img src="assets/carnival.png" alt="특장 차량">
+                <div class="modal-hero-overlay">
+                    <div class="modal-badge">01 — Special Vehicle</div>
+                    <h2 class="modal-title">특장 차량</h2>
+                    <p class="modal-tagline">움직이는 차량에 가치와 실용을 더하다</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    주식회사 태건은 15년 이상의 기간동안 경찰 순찰차, 한국전력, 도로공사 등 Fleet 특장 제작/납품으로 축적된 특장 제작 노하우를 바탕으로
+                    전문화된 특장 제작 경험을 통해 고객 요구에 부합하는 최고의 품질과 서비스를 제공하고 있습니다.
+                </p>
+                <h3 class="modal-subtitle">주요 분야</h3>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4>경찰 / 수사 차량</h4>
+                        <p>순찰차, KCSI 과학수사 이동통신차량 및 버스 등 경찰 전용 특장 차량</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h4>의료 / 검진 차량</h4>
+                        <p>이동 검진 차량, 이동 방송 차량 등 전문 의료 및 방송 분야 특장</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h4>소방 / 군수 차량</h4>
+                        <p>소방 차량, 공군 EOD 차량 제작 및 설치, 순회정비차량 등 군수 분야</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                        </div>
+                        <h4>교육 / 홍보 / 전기차</h4>
+                        <p>교육 및 홍보 차량, 전기자동차 긴급 충전 순회차량, LED 사인보드 등</p>
+                    </div>
+                </div>
+                <div class="modal-gallery">
+                    <img src="assets/police.png" alt="경찰 특장차">
+                    <img src="assets/carnival.png" alt="카니발 특장">
+                    <img src="assets/direction.png" alt="방향 표시">
+                </div>
+                <div class="modal-cta">
+                    <a href="#contact" class="btn btn-primary modal-contact-btn">
+                        <span>프로젝트 문의하기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-ambulance">
+        <div class="modal">
+            <button class="modal-close" aria-label="닫기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-hero">
+                <img src="assets/ambulance-interior.png" alt="특수 구급차">
+                <div class="modal-hero-overlay">
+                    <div class="modal-badge">02 — Special Ambulance</div>
+                    <h2 class="modal-title">특수 구급차</h2>
+                    <p class="modal-tagline">절대적인 안전을 추구합니다</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    주식회사 태건의 확장형 구급차는 환자 이송뿐만 아니라 현장에서 응급처치도 제공하며,
+                    충분한 내부 공간을 바탕으로 다양한 응급의료 장비를 완벽하게 갖추고 있어
+                    어떠한 응급 상황에서도 구급 대원이 환자에게 적절한 응급처치를 효율적으로 수행할 수 있습니다.
+                </p>
+                <h3 class="modal-subtitle">핵심 특징</h3>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4>절대적인 안전</h4>
+                        <p>최고 수준의 안전 기준을 충족하는 구급차 설계 및 제작</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <h4>충분한 시술 공간</h4>
+                        <p>의료 시술을 수행할 수 있는 넉넉한 내부 공간 확보</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h4>다양한 의료 장비</h4>
+                        <p>전동 산소 호흡 장치, 링거 고정대, 의료 장비 캐비닛, 이동식 조명 등</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <h4>편안한 좌석</h4>
+                        <p>이송 중 환자와 구급대원 모두에게 편안한 좌석 시스템 제공</p>
+                    </div>
+                </div>
+                <h3 class="modal-subtitle">주요 장비 사양</h3>
+                <div class="modal-specs">
+                    <div class="modal-spec">
+                        <span class="spec-label">전동 산소 호흡 장치</span>
+                        <span class="spec-value">대용량 산소탱크 연결, 장거리 운행 시에도 안정적 산소 공급</span>
+                    </div>
+                    <div class="modal-spec">
+                        <span class="spec-label">벽면 전원 콘센트</span>
+                        <span class="spec-value">24V, 110V, 220V 전원 — 천장 및 양쪽 벽면 설치</span>
+                    </div>
+                    <div class="modal-spec">
+                        <span class="spec-label">이동식 조명</span>
+                        <span class="spec-value">유연한 케이블로 상처 부위 정밀 조명 가능</span>
+                    </div>
+                    <div class="modal-spec">
+                        <span class="spec-label">자동 스윙 도어</span>
+                        <span class="spec-value">운전석에서 제어 가능한 전동 사이드 도어 (옵션)</span>
+                    </div>
+                </div>
+                <div class="modal-gallery">
+                    <img src="assets/ambulance-interior.png" alt="구급차 내부">
+                    <img src="assets/ambulance.png" alt="구급차 외부">
+                </div>
+                <div class="modal-cta">
+                    <a href="#contact" class="btn btn-primary modal-contact-btn">
+                        <span>프로젝트 문의하기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-ad">
+        <div class="modal">
+            <button class="modal-close" aria-label="닫기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-hero">
+                <img src="assets/ad-print.jpg" alt="차량 광고">
+                <div class="modal-hero-overlay">
+                    <div class="modal-badge">03 — Decal & Wrapping</div>
+                    <h2 class="modal-title">차량 광고</h2>
+                    <p class="modal-tagline">선명한 화질에 친환경을 담다</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    차량 광고는 차량의 외부에 광고물을 부착하여, 차량이 운행하는 동안 불특정 다수의 사람들에게
+                    광고가 자연스럽게 노출되는 효율적인 광고 수단입니다. 주식회사 태건은 국내 최고의 차량 광고 전문 업체이며,
+                    출력 해상도와 생산성, 비용 면에서 최고의 서비스를 제공합니다.
+                </p>
+                <h3 class="modal-subtitle">태건의 강점</h3>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h4>20년+ 시공 노하우</h4>
+                        <p>오랜 경력의 자체 전문 시공 인력과 전국 제휴 네트워크 보유</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+                        </div>
+                        <h4>3M MCS 인증</h4>
+                        <p>국내 최초 3M 온라인 MCS Warranty 획득, 3M Authorized Trainer 자격 보유</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                        </div>
+                        <h4>최신 출력 장비</h4>
+                        <p>HP 최신 출력 장비, 친환경 프린터, Digital Cutting Plotter 등 보유</p>
+                    </div>
+                    <div class="modal-feature">
+                        <div class="modal-feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h4>5,000평 이천 공장</h4>
+                        <p>인쇄 공장과 결합된 대규모 시설로 다수 차량 일관 시공 및 즉각 대응 가능</p>
+                    </div>
+                </div>
+                <h3 class="modal-subtitle">3M Wrap Academy Center</h3>
+                <p class="modal-desc" style="margin-top:-8px;">
+                    2015년 국내 최초로 3M 인증 "Wrap Academy Center"를 개소하였습니다.
+                    3M 정품 필름과 잉크를 사용하며, 엄격한 품질관리 검사를 통과한 업체에게만 주어지는
+                    3M MCS(Matched Component System) 인증을 보유하고 있습니다.
+                </p>
+                <div class="modal-gallery">
+                    <img src="assets/ad-print.jpg" alt="차량 광고 출력">
+                    <img src="assets/vehicle-wrap.jpg" alt="차량 랩핑">
+                </div>
+                <div class="modal-cta">
+                    <a href="#contact" class="btn btn-primary modal-contact-btn">
+                        <span>프로젝트 문의하기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-blackbox">
+        <div class="modal">
+            <button class="modal-close" aria-label="닫기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="modal-hero">
+                <img src="assets/logistics.jpg" alt="블랙박스">
+                <div class="modal-hero-overlay">
+                    <div class="modal-badge">04 — Car Driving Recorder</div>
+                    <h2 class="modal-title">블랙박스</h2>
+                    <p class="modal-tagline">관공서 차량에 최적화된 전문 블랙박스</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-desc">
+                    경찰청, 소방청 등 관공서 차량에 최적화된 전문 블랙박스 시스템을 개발 및 납품하고 있습니다.
+                    다채널 고화질 녹화, 외장 GPS 연동, 대용량 저장장치 등 관공서 차량에 특화된 기능을 제공합니다.
+                </p>
+                <h3 class="modal-subtitle">제품 라인업</h3>
+                <div class="modal-products">
+                    <div class="modal-product">
+                        <div class="product-name">KP-2114</div>
+                        <ul class="product-specs">
+                            <li>41만 화소 2채널 (전방 / 실내 IR 카메라)</li>
+                            <li>500GB 하드디스크 (15~20일 연속 녹화)</li>
+                            <li>외장 GPS 장착 (구글맵 연동)</li>
+                            <li>2011년 경찰청 순찰차 적용</li>
+                        </ul>
+                    </div>
+                    <div class="modal-product">
+                        <div class="product-name">KP-2124</div>
+                        <ul class="product-specs">
+                            <li>41만 화소 2채널 (전방 / 실내 IR 카메라)</li>
+                            <li>300~500GB 외장 하드디스크</li>
+                            <li>외장 GPS 장착 (구글맵 연동)</li>
+                            <li>2012년 경찰청 순찰차 / 경력수송버스 적용</li>
+                        </ul>
+                    </div>
+                    <div class="modal-product">
+                        <div class="product-name">KB-213HD</div>
+                        <ul class="product-specs">
+                            <li>HD 200만 화소 2채널 (전방 / 실내 IR)</li>
+                            <li>국내 최초 64GB SD CARD (3~5일 연속 녹화)</li>
+                            <li>외장 GPS 장착 (구글맵 연동)</li>
+                            <li>2014년 순찰차, 경력수송버스, 경비작전차 적용</li>
+                        </ul>
+                    </div>
+                    <div class="modal-product">
+                        <div class="product-name">SAC8 (4~8채널)</div>
+                        <ul class="product-specs">
+                            <li>41만 화소, 720x480 (D1) 최대 8채널</li>
+                            <li>국내 최초 SSD 128GB 장착 (3~4일 연속 녹화)</li>
+                            <li>내장형 3축 가속도 충격감지 센서</li>
+                            <li>특수 앰뷸런스, 특수 경찰차량, 법무부 호송차 적용</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-cta">
+                    <a href="#contact" class="btn btn-primary modal-contact-btn">
+                        <span>프로젝트 문의하기</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
